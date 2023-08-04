@@ -1,0 +1,76 @@
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.card-title {
+    text-align: left;
+    color: brown;
+    font-size: xx-large;
+    padding-top: 16px;
+    padding-left: 16px;
+    opacity: 0.7;
+}
+
+.mat-h3 {
+    margin: 0 0 6px;
+}
+
+.container{
+    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-label {
+    display: flex;
+    margin-bottom: 0rem;
+    color: darkseagreen;
+}
+
+.form-control{
+    color: darkseagreen;
+    border-color: darkseagreen;
+}
+
+::placeholder {
+    color: darkseagreen;
+    opacity: 1; /* Firefox */
+  }
+
+.btn-primary{
+    width: 100%;
+    color: aliceblue;
+    background-color: brown;
+    border-color: brown;
+    opacity: 0.6;
+  }
+
+@media screen and (max-width: 767px) {
+    .formstyle {
+        width: 100%;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: x-large;
+    }
+
+    .container{
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,42 @@
+<!-- Login/Register -->
+<div class="container">
+    <div class="card">
+        <div class="card-title">
+            <p>Register</p>
+        </div>
+        <div class="card-body">
+            <div class="col col-md-12 formstyle" style="overflow-y: scroll">
+                <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+                    <!-- email and password -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username *</label><br/>
+                        <input id="username" type="text" class="form-control" formControlName="username" placeholder="Enter your Username"/>
+                        <div *ngIf="regForm.controls['username'].invalid && (regForm.controls['username'].dirty || regForm.controls['username'].touched)" class="alert alert-danger">
+                            <div *ngIf="regForm.controls['username'].errors?.['required']">Field cannot be empty</div>
+                            <div *ngIf="regForm.controls['username'].errors?.['minlength']">Field must be at least 2 characters long.</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email ID *</label><br/>
+                        <input id="email" type="text" class="form-control" formControlName="email" placeholder="Enter your Email ID"/>
+                        <div *ngIf="regForm.controls['email'].invalid && (regForm.controls['email'].dirty || regForm.controls['email'].touched)" class="alert alert-danger">
+                            <div *ngIf="regForm.controls['email'].errors?.['required']">Field cannot be empty</div>
+                            <!-- <div *ngIf="regForm.controls['email'].errors?.['minlength']">Field must be at least 2 characters long.</div> -->
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password *</label><br/>
+                        <input id="password" type="text" class="form-control" formControlName="password" placeholder="Enter your password"/>
+                        <div *ngIf="regForm.controls['password'].invalid && (regForm.controls['password'].dirty || regForm.controls['password'].touched)" class="alert alert-danger">
+                            <div *ngIf="regForm.controls['password'].errors?.['required']">Password cannot be empty</div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div>
+                        <button type="submit" [disabled]="!regForm.valid" class="btn btn-primary login">Submit</button>&nbsp;
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.containerone {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.containertwo{
+    padding: 10px;
+}
+
+.top-left0 {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    right: 40%;
+    font-size: xx-large;
+    font-weight: bold;
+    /* transform: translate(-50%, -50%); */
+    color: brown;
+}
+
+.top-left {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 40%;
+    font-size: x-large;
+    /* transform: translate(-50%, -50%); */
+    color: brown;
+}
+
+.loader1{
+    left: 45%;
+}
+
+.textStyle{
+    text-align: center;
+    justify-items: center;
+    color: brown;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    .top-left0 {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        right: 40%;
+        font-size: xx-large;
+        font-weight: bold;
+        /* transform: translate(-50%, -50%); */
+        color: brown;
+    }
+}

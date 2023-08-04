@@ -1,0 +1,41 @@
+<!-- Login/Register -->
+<div class="container">
+    <div class="card">
+        <div class="card-title">
+            <p>Login</p>
+        </div>
+        <div class="card-body">
+            <div class="col col-md-12 formstyle" style="overflow-y: scroll">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <!-- username/email and password -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username *</label><br/>
+                        <input id="username" type="text" class="form-control" formControlName="username" placeholder="Enter your Username"/>
+                        <div *ngIf="loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty || loginForm.controls['username'].touched)" class="alert alert-danger">
+                            <div *ngIf="loginForm.controls['username'].errors?.['required']">Field cannot be empty</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email ID *</label><br/>
+                        <input id="email" type="text" class="form-control" formControlName="email" placeholder="Enter your Email ID"/>
+                        <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)" class="alert alert-danger">
+                            <div *ngIf="loginForm.controls['email'].errors?.['required']">Field cannot be empty</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password *</label><br/>
+                        <input id="password" type="text" class="form-control" formControlName="password" placeholder="Enter your password"/>
+                        <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="alert alert-danger">
+                            <div *ngIf="loginForm.controls['password'].errors?.['required']">Password cannot be empty</div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div>
+                        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary login">Log In</button>&nbsp;
+                    </div>
+                    Have not registered yet? <a routerLink="/register">Click here to Register</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

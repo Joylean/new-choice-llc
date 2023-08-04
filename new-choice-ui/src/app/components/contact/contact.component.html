@@ -1,0 +1,27 @@
+<div class="containerOut">
+  <div style="display: flex; justify-content: center; align-items: center; margin: 10px;">
+    <div class="card">
+      <div id="container">
+        <h2 class="card-title"><span>WE DELIVER ALL OVER UAE</span><br /><span>Get In Touch</span></h2>
+      </div>
+      <div class="card-body">
+        <p class="card-text text1">ALEX VARGHESE</p>
+        <p class="card-text text2"><span><mat-icon aria-hidden="false" aria-label="phone call"
+              fontIcon="call"></mat-icon></span><span class="text11">Phone:<button (click)="copyText('+971 523864147')"
+              class="text11 extra">+971 523864147</button><br />
+            <button (click)="copyText('+971 503250537')" class="text12 extra">+971 503250537</button></span></p>
+        <p class="card-text text2"><span><mat-icon aria-hidden="false" aria-label="email to"
+              fontIcon="mail_outline"></mat-icon></span><button (click)="copyText('newchoicemedical80@gmail.com')"
+            class="text11 extra">newchoicemedical80@gmail.com</button></p>
+        <p class="card-text text2"><span><mat-icon aria-hidden="false" aria-label="location"
+              fontIcon="location_on"></mat-icon></span><button
+            (click)="copyText('Mezzanine floor, Al Sawari Tower B, Khalidiya Street, Abu Dhabi, UAE')"
+            class="text11 extra">Mezzanine floor, Al Sawari Tower B, Khalidiya Street, Abu Dhabi, UAE</button></p>
+        <a class="btn btn-primary" (click)="locationShow()"><mat-icon> location_on</mat-icon><span class="btnText">SHOW
+            LOCATION ON GOOGLE MAP</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-share-buttons></app-share-buttons>
