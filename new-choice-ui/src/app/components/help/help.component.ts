@@ -49,7 +49,7 @@ export class HelpComponent implements OnInit {
       this.subj=encodeURIComponent("Query");
     }
     
-    window.open(`mailto:${this.emailID}?&subject= ${this.subj} &body=${this.msg}%20`,"_blank")
+    window.open(`mailto:${this.emailID}?&subject= ${this.subj} &body=${this.msg}%20`,"_blank",'noopener,noreferrer,resizable')
 
 // \r = %0D (Ctrl+M = carriage return)
 // \n = %0A (Ctrl+A = line feed)

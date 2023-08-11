@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit{
   }
 
   locationShow(){
-    window.open("https://goo.gl/maps/oGBSL9Gzk1CYfUnU8", "_blank");
+    window.open("https://goo.gl/maps/oGBSL9Gzk1CYfUnU8", "_blank",'noopener,noreferrer,resizable');
   }
 
   copyText(textToCopy: string) {
