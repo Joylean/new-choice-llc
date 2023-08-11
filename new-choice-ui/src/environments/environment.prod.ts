@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'http://newchoicemedicalsupply.com'
+    baseApiUrl: 'https://new-choice-api.onrender.com'
   };
