@@ -1,38 +1,3 @@
-<!-- Send Quote -->
-<div class="container">
-    <div class="card">
-        <div class="card-title title">
-            <p>Order products via Email</p>
-        </div>
-        <div class="card-body">
-            <div class="col col-md-12 formstyle" style="overflow-y: scroll">
-                <form [formGroup]="admitForm" (ngSubmit)="onSubmit()">
-                    <div class="mb-3">
-                        <label for="tosend" class="form-label">Email To:</label><br/>
-                        <input class="form-control" type="text" placeholder={{this.emailID}} readonly>
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label><br/>
-                        <input class="form-control" type="text" placeholder={{this.subjectForOrder}} readonly>
-                    </div>
-                    <div class="mb-3">
-                        <label for="quote" class="form-label">Enter the order/ query details *</label><br/>
-                        <textarea id="quote" class="form-control" rows="5" formControlName="quote" placeholder="Type the order/query here"></textarea>
-                        <div *ngIf="admitForm.controls['quote'].invalid && (admitForm.controls['quote'].dirty || admitForm.controls['quote'].touched)" class="alert alert-danger">
-                            <div *ngIf="admitForm.controls['quote'].errors?.['required']">Order/ Query cannot be empty</div>
-                            <div *ngIf="admitForm.controls['quote'].errors?.['minlength']">Order/Query must be at least 10 characters long.</div>
-                        </div>
-                    </div>
-                    <br/>
-                    <div>
-                        <button type="submit" [disabled]="!admitForm.valid" class="btn btn-primary fa-quote">Send Email</button>&nbsp;
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Share -->
 <div class="share-btn-container">
     <a class="facebook-btn" target="_blank">

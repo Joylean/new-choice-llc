@@ -44,6 +44,12 @@
     display: block;
   }
 
+  .btn-primary:hover{
+    background-color: aliceblue;
+    border-color: aliceblue;
+    color: darkseagreen;
+  }
+
   .card-footer {
     padding: 0%;
   }
@@ -72,6 +78,14 @@
   .container{
     background-color: #FAF6F6;
     max-width: 100%;
+  }
+
+  .btn-primary{
+    width: 100%;
+    color: aliceblue;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+    /* opacity: 1; */
   }
 
   @media screen and (max-width: 767px) {

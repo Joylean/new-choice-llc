@@ -2,8 +2,8 @@
   <mat-spinner></mat-spinner>
 </div>
 <div class="container">
-  <h1 *ngIf="loaded" class="text1">Medical appliances</h1>
-  <div *ngIf="loaded" class="row">
+  <h1 *ngIf="loaded && !open" class="text1">Medical appliances</h1>
+  <div *ngIf="loaded && !open" class="row">
     <div *ngFor="let cardata of carddata" class="col-sm-3 cardstyle">
       <div class="card">
         <div id="container">
@@ -16,5 +16,26 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 *ngIf="loaded && open" class="text1">MEDICAL AND SURGICAL APPLIANCES</h1>
+  <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button>
+  <div *ngIf="loaded && open" class="row">
+    <div *ngFor="let cardata of carddata1" class="col-sm-3 cardstyle">
+      <div class="card">
+        <div id="container">
+          <img src={{cardata.photos}} class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-title">{{cardata.name}}</p>
+          <!-- <p class="card-text">{{cardata.description}}</p> -->
+          <!-- <a href="#" class="btn btn-primary"></a> -->
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button>
   </div>
 </div>

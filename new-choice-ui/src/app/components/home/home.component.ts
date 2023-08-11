@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   loaded:Boolean = false;
+  home:Boolean = true;
   ngOnInit(): void {
     // setTimeout(() => {
     //   this.loaded=true;

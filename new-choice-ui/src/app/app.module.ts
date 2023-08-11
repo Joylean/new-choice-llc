@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ShareButtonsComponent } from './components/share-buttons/share-buttons.component';
+import { HelpComponent } from './components/help/help.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShareButtonsComponent } from './components/share-buttons/share-buttons.
     ContactComponent,
     RegisterComponent,
     LoginComponent,
-    ShareButtonsComponent
+    ShareButtonsComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

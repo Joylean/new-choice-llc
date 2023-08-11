@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { HelpComponent } from './components/help/help.component';
 
 const routes: Routes = [{
   path: '',
@@ -52,6 +53,13 @@ const routes: Routes = [{
   component: RegisterComponent,
   data: {
     title: 'Sign Up'
+  }
+},
+{
+  path: 'help',
+  component: HelpComponent,
+  data: {
+    title: 'Help ?'
   }
 },];
 

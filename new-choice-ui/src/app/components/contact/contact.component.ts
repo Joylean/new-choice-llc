@@ -8,7 +8,7 @@ import { Clipboard } from '@angular/cdk/clipboard';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit{
-  
+  title:any = "Email Us to Order Items";
   constructor(private clipboard: Clipboard) {}
 
   ngOnInit() {
