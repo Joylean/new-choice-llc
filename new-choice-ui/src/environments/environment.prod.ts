@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'http://yourdomain.com:8800'
+    apiUrl: 'http://newchoicemedicalsupply.com'
   };
