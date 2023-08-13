@@ -50,9 +50,9 @@
   }
 
   .btn-primary:hover{
-    background-color: aliceblue;
-    border-color: aliceblue;
-    color: darkseagreen;
+    color: aliceblue;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
   }
 
   .card-footer {
@@ -75,22 +75,27 @@
 
   .text1 {
     text-align: center;
-    color: darkseagreen;
+    color: whitesmoke;
     font-size: x-large;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .container{
     background-color: #FAF6F6;
     max-width: 100%;
+    padding: 0px 0px;
+  }
+
+  .button{
+    padding: 10px;
   }
 
   .btn-primary{
     width: 100%;
-    color: aliceblue;
-    background-color: darkseagreen;
+    background-color: white;
     border-color: darkseagreen;
-    /* opacity: 1; */
+    color: darkseagreen;
   }
 
   @media screen and (max-width: 767px) {

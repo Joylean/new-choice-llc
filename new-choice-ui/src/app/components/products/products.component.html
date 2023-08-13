@@ -1,9 +1,9 @@
 <div class="spinner" *ngIf="!loaded">
   <mat-spinner></mat-spinner>
 </div>
-<div class="container">
-  <h1 *ngIf="loaded && !open" class="text1 textStyle3">Medical appliances</h1>
-  <div *ngIf="loaded && !open" class="row">
+<div *ngIf="loaded && !open" class="container">
+  <h1 class="text1 textStyle3">Medical appliances</h1>
+  <div class="row">
     <div *ngFor="let cardata of carddata" class="col-sm-3 cardstyle">
       <div class="card">
         <div id="container">
@@ -20,10 +20,12 @@
 </div>
 
 
-<div class="container">
-  <h1 *ngIf="loaded && open" class="text1 textStyle3">MEDICAL AND SURGICAL APPLIANCES</h1>
-  <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button>
-  <div *ngIf="loaded && open" class="row">
+<div *ngIf="loaded && open" class="container">
+  <h1 class="text1 textStyle3">MEDICAL AND SURGICAL APPLIANCES</h1>
+  <div class="row">
+    <div class="button">
+      <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button>
+    </div>
     <div *ngFor="let cardata of carddata1" class="col-sm-3 cardstyle">
       <div class="card">
         <div id="container">
@@ -36,6 +38,8 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button><br/>
+    <div class="button">
+      <button class="btn btn-primary" routerLink="/products"> >> Click here to view all products</button><br/>
+    </div>
   </div>
 </div>
