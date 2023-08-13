@@ -10,6 +10,11 @@
   padding: 10px 55px;
 }
 
+.textStyle3{
+  background-color: darkseagreen; 
+  color: aliceblue;
+}
+
 .item{
   width: 100%;
   padding: 1%;

@@ -67,7 +67,7 @@
             }
           },
           "options": {
-            "browserTarget": "angular-application-name:build",
+            "browserTarget": "new-choice-ui:build",
             "proxyConfig": "src/proxy.conf.json"
           },
           "defaultConfiguration": "development"
